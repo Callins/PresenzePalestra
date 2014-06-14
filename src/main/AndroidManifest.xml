@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pallavolo"
+    android:versionCode="4"
+    android:versionName="1.0.3" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="16" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- for open UDID -->
+        <service android:name="org.openudid.OpenUDID_service" >
+            <intent-filter>
+                <action android:name="org.openudid.GETUDID" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.pallavolo.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pallavolo.AnagraficaGiocatori"
+            android:label="@string/title_activity_anagrafica_giocatori" >
+        </activity>
+        <activity
+            android:name="com.pallavolo.AddGiocatore"
+            android:label="@string/title_activity_add_giocatore" >
+        </activity>
+        <activity
+            android:name="com.pallavolo.ListaGiocatori"
+            android:label="@string/title_activity_lista_giocatori" >
+        </activity>
+        <activity
+            android:name="com.pallavolo.AggiungiEvento"
+            android:label="@string/title_activity_aggiungi_evento" >
+        </activity>
+        <activity
+                android:name=".CalendarioEventi"
+                android:label="Calendario"/>
+        <activity
+                android:name=".VisPartecipanti"
+                android:label="Partecipanti"/>
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+</manifest>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Presenze Palestra</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_giocatore">Aggiungi Giocatore </string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_anagrafica_giocatori">Anagrafica Giocatori</string>
+    <string name="title_activity_add_giocatore">Aggiungi Giocatore</string>
+    <string name="title_activity_lista_giocatori">Lista Giocatori</string>
+    <string name="Aggiorna">Aggiorna</string>
+    <string name="menu_add">Aggiungi</string>
+    <string name="menu_edit">Modifica</string>
+    <string name="menu_delete">Elimina</string>
+    <string name="title_activity_aggiungi_evento">Aggiungi Evento</string>
+    <string name="visPart">Visualizza Partecipanti</string>
+    <string name="SendEmail">Invia E-mail</string>
+
+</resources>

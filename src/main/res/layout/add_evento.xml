@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clickable="true"
+              android:gravity="top"
+              android:background="@android:color/background_dark"
+    >
+
+
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtLuogo"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:password="false"
+            android:hint="Luogo"
+        android:layout_below="@+id/txtDescEvento"
+        android:layout_alignParentLeft="true" />
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDescEvento"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:password="false"
+            android:hint="Descrizione Evento"
+    />
+
+
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salva"
+            android:id="@+id/btnAddEvento"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="168dp" />
+
+    <DatePicker
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker"
+        android:background="@drawable/pulsanteverde"
+        android:calendarViewShown="false"
+        android:layout_below="@+id/txtLuogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+
+</RelativeLayout>
